@@ -1,0 +1,139 @@
+/* Ensure the body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+/* Ensure header takes full width and height, and has a black background */
+header {
+    width: 100%;
+    height: 56px; /* Adjust based on your header's height */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white for contrast */
+    z-index: 1000; /* Ensure the header stays on top */
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default margins and padding from the navbar */
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Ensure navbar background is black */
+    color: white; /* Ensure text color is white */
+    box-shadow: none; /* Remove box-shadow if present */
+}
+
+/* Layout container to handle sidebar and content */
+.layout {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 56px); /* Height minus header */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px; /* Adjusted width of the sidebar */
+    background-color: #ffc107; /* Adjust to your design */
+    color: white;
+    position: fixed;
+    top: 56px; /* Offset by header height */
+    bottom: 0;
+    overflow-y: auto; /* Scrollable if content overflows */
+}
+
+/* Content styling */
+.content {
+    margin-left: 200px; /* Adjusted to offset by sidebar width */
+    padding: 20px;
+    flex: 1; /* Takes up remaining space */
+    overflow-y: auto; /* Scrollable if content overflows */
+}
+
+/* Sidebar link styling */
+.sidebar .nav-link {
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.sidebar  {
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.nav-link {
+    color: white;
+    padding: 8px 12px; /* Add padding for better spacing */
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Smooth transition */
+    border-radius: 8px; /* Rounded corners */
+    position: relative; /* Allows positioning of pseudo-elements */
+    overflow: hidden; /* Ensures pseudo-elements don't overflow */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.425); /* Hover background color */
+}
+
+/* Optional: Using pseudo-elements for more complex effects */
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 251, 0, 0.2); /* Initial background color */
+    border-radius: 8px;
+    z-index: -1; /* Place it behind the text */
+    transform: scale(0.9); /* Initial scaling */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.nav-link:hover::before {
+    transform: scale(1); /* Scale up on hover */
+    background-color: rgba(255, 255, 255, 0.425); /* Change background color on hover */
+}
+
+
+.sidebar-header h5,
+.sidebar-header small,
+.nav-link {
+    color: white;
+}
+
+.nav-link i {
+    margin-right: 10px;
+}
+
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 56px; /* Adjust based on your header's height */
+    z-index: 1000;
+}
+
+.input-group-text {
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.nav-item{
+    margin: 5px;
+}
+
+#list-container {
+    margin-top: 60px;
+}

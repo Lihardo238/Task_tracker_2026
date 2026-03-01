@@ -1,0 +1,70 @@
+/* Custom styles for the Create User form */
+
+.container {
+    max-width: 1200px; /* Adjusted width for a more compact form */
+    margin: auto;
+    padding: 20px; /* Added padding to the container */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Increased font size for the heading */
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Ensure heading is left-aligned */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Added margin for form groups */
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem; /* Added margin below labels */
+    text-align: left; /* Ensure labels are left-aligned */
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem; /* Slightly smaller border radius */
+    padding: 0.75rem 1rem; /* Added padding */
+    font-size: 1.125rem; /* Increased font size */
+    line-height: 1.25;
+    text-align: left; /* Ensure input text is left-aligned */
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.75rem 1.25rem; /* Added padding */
+    font-size: 1.125rem; /* Increased font size */
+    border-radius: 0.25rem; /* Slightly smaller border radius */
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.alert {
+    margin-top: 0.5rem; /* Added margin for alerts */
+    padding: 0.75rem 1rem; /* Added padding */
+    border: 1px solid transparent;
+    border-radius: 0.25rem; /* Slightly smaller border radius */
+    font-size: 1rem; /* Standard font size for alerts */
+    text-align: left; /* Ensure alert text is left-aligned */
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

@@ -1,0 +1,49 @@
+/* Table Styling */
+.table {
+    margin-top: 10px; /* Reduced margin */
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 8px; /* Reduced padding */
+    vertical-align: middle;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #e2e6ea;
+}
+
+.table td {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Flex Container for Image */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Image beside the Login Button */
+.beside-image {
+    height: 20vh;
+    /* Adjust size as needed */
+}
